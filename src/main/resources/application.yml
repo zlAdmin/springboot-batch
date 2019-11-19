@@ -1,0 +1,13 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: springboot-batch
+  datasource:
+    url: jdbc:mysql://localhost:3306/batch-demo
+    username: root
+    password: 123456
+  # 不让项目已启动就执行批量任务
+  batch:
+    job:
+      enabled: false
